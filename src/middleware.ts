@@ -14,7 +14,15 @@ export default async function middleware(req: NextRequest) {
   }
 
   // Handle auth: we don't want unauthorized users to see the dash
-  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET || "fallback_secret_for_development" });
+  const cookieName = req.cookies.has("__Secure-next-auth.session-token")
+    ? "__Secure-next-auth.session-token"
+    : "next-auth.session-token";
+
+  const token = await getToken({ 
+    req, 
+    secret: process.env.NEXTAUTH_SECRET || "fallback_secret_for_development",
+    cookieName,
+  });
   
   // Is the user on the login page or share page?
   const isLoginPage = req.nextUrl.pathname.endsWith('/login') || req.nextUrl.pathname.endsWith('/share');
