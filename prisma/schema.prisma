@@ -1,0 +1,130 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  password  String
+  role      String   @default("ADMIN") // "ADMIN" or "VIEWER"
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model SystemSettings {
+  id             String   @id @default("singleton")
+  lastBackupDate DateTime @default(now())
+}
+
+model Person {
+  id           String        @id @default(uuid())
+  nameEnglish  String
+  nameUrdu     String
+  phone        String?
+  address      String?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  transactions Transaction[]
+  files        File[]
+  notes        Note[]
+  cheques      Cheque[]
+}
+
+model Transaction {
+  id                 String   @id @default(uuid())
+  personId           String
+  person             Person   @relation(fields: [personId], references: [id], onDelete: Cascade)
+  descriptionEnglish String
+  descriptionUrdu    String
+  amount             Float
+  type               String   // "CREDIT", "DEBIT", "PROFIT"
+  category           String?  // Optional: "Electricity", "Rent", "Salary", etc.
+  date               DateTime? @default(now())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+}
+
+model File {
+  id        String   @id @default(uuid())
+  name      String
+  path      String
+  mimeType  String
+  createdAt DateTime @default(now())
+  personId  String?
+  person    Person?  @relation(fields: [personId], references: [id], onDelete: Cascade)
+}
+
+model Note {
+  id          String   @id @default(uuid())
+  text        String
+  isCompleted Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  personId    String?
+  person      Person?  @relation(fields: [personId], references: [id], onDelete: Cascade)
+}
+
+model RecurringExpense {
+  id             String           @id @default(uuid())
+  nameEnglish    String
+  nameUrdu       String
+  expectedAmount Float
+  dueDay         Int
+  category       String?
+  createdAt      DateTime         @default(now())
+  payments       ExpensePayment[]
+}
+
+model ExpensePayment {
+  id                String           @id @default(uuid())
+  expenseId         String
+  expense           RecurringExpense @relation(fields: [expenseId], references: [id], onDelete: Cascade)
+  month             String           // Format: "YYYY-MM"
+  amountPaid        Float
+  datePaid          DateTime         @default(now())
+  
+  @@unique([expenseId, month])
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  username  String
+  action    String
+  details   String
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  emoji     String   @default("📌")
+  createdAt DateTime @default(now())
+}
+
+model TransactionTemplate {
+  id                 String   @id @default(uuid())
+  label              String
+  descriptionEnglish String
+  descriptionUrdu    String
+  amount             Float
+  type               String
+  category           String?
+  createdAt          DateTime @default(now())
+}
+
+model Cheque {
+  id           String   @id @default(uuid())
+  personId     String
+  person       Person   @relation(fields: [personId], references: [id], onDelete: Cascade)
+  chequeNumber String
+  bankName     String
+  amount       Float
+  status       String   @default("PENDING") // PENDING, CLEARED, BOUNCED
+  date         DateTime @default(now())
+  createdAt    DateTime @default(now())
+}

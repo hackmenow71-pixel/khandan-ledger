@@ -1,0 +1,87 @@
+{
+  "Navigation": {
+    "dashboard": "Dashboard",
+    "persons": "Accounts",
+    "reports": "Reports",
+    "inventory": "Inventory",
+    "notes": "Notes",
+    "backup": "Backup Data",
+    "logout": "Logout",
+    "switchLang": "اردو",
+    "expenses": "Expenses"
+  },
+  "Dashboard": {
+    "title": "Dashboard",
+    "totalCredit": "Total Credit",
+    "totalDebit": "Total Debit",
+    "totalProfitPaid": "Total Profit Paid",
+    "totalToBeGiven": "Total To Be Given",
+    "totalToBeTaken": "Total To Be Taken",
+    "netBalance": "Net Balance",
+    "totalAccounts": "Total Accounts",
+    "recentTransactions": "Recent Transactions",
+    "topCreditors": "Highest Balances",
+    "topDebtors": "Highest Debts",
+    "account": "Account",
+    "exportAll": "Export All"
+  },
+  "Persons": {
+    "title": "Accounts",
+    "addPerson": "Add Account",
+    "nameEn": "Name (English)",
+    "nameUr": "Name (Urdu)",
+    "edit": "Edit",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "Transactions": {
+    "title": "Transactions",
+    "addTransaction": "Add Transaction",
+    "type": "Type",
+    "amount": "Amount",
+    "description": "Description",
+    "descEn": "Description (English)",
+    "descUr": "Description (Urdu)",
+    "date": "Date",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "copy": "Copy",
+    "copyToOther": "Copy to Other Accounts",
+    "save": "Save",
+    "cancel": "Cancel"
+  },
+  "Inventory": {
+    "title": "Inventory",
+    "uploadFile": "Upload File",
+    "fileName": "File Name",
+    "date": "Date",
+    "linkedAccount": "Linked Account",
+    "noFiles": "No files found.",
+    "delete": "Delete",
+    "view": "View",
+    "dragDrop": "Drag and drop files here, or click to select files"
+  },
+  "Notes": {
+    "title": "Notes & Reminders",
+    "addNote": "Add Note",
+    "noteText": "Note Details",
+    "linkedAccount": "Linked Account",
+    "noNotes": "No notes found.",
+    "delete": "Delete"
+  },
+  "Expenses": {
+    "title": "Monthly Expenses",
+    "addExpense": "Add Expense",
+    "nameEn": "Expense Name (English)",
+    "nameUr": "Expense Name (Urdu)",
+    "expectedAmount": "Expected Amount",
+    "dueDate": "Due Date",
+    "paidAmount": "Paid Amount",
+    "markPaid": "Mark Paid",
+    "unpaid": "Unpaid",
+    "paid": "Paid",
+    "delete": "Delete",
+    "noExpenses": "No recurring expenses found."
+  }
+}

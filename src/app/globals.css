@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f8fafc;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: radial-gradient(circle at 10% 10%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+              #f8fafc;
+  min-height: 100vh;
+  color: var(--foreground);
+}
+
+.dark body, body.dark, [data-theme="dark"] body {
+  background: radial-gradient(circle at 15% 15%, #1e1b4b 0%, #0f172a 45%, #020617 100%) !important;
+  color: #f1f5f9;
+}
+
+/* Glassmorphism Panel Utilities */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+}
+
+.dark .glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glass-nav {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Global Card Glassification for Dark/Light Mode */
+.dark .bg-gray-900,
+.dark .bg-gray-800,
+.dark .bg-gray-950 {
+  background-color: rgba(15, 23, 42, 0.65) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.dark .bg-white {
+  background-color: rgba(30, 41, 59, 0.65) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+.dark .border-gray-200,
+.dark .border-gray-700,
+.dark .border-gray-800 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Glass cards and containers */
+.shadow, .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15) !important;
+}
+
+.dark .shadow, .dark .shadow-sm, .dark .shadow-md, .dark .shadow-lg, .dark .shadow-xl {
+  box-shadow: 0 10px 35px 0 rgba(0, 0, 0, 0.5) !important;
+}
+
+.rounded-lg, .rounded-xl, .rounded-2xl {
+  border-radius: 1.25rem !important;
+}
+
+/* Frosted glass hover effect */
+.dark a.overflow-hidden:hover,
+.dark div.overflow-hidden:hover {
+  border-color: rgba(165, 180, 252, 0.4) !important;
+  box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.2) !important;
+  transform: translateY(-1px);
+  transition: all 0.25s ease;
+}
+
+/* Ambient Floating Glow Orbs */
+.ambient-glow-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+  animation: floatOrb 20s ease-in-out infinite alternate;
+}
+@keyframes floatOrb {
+  0% { transform: translate(0px, 0px) scale(1); }
+  50% { transform: translate(50px, -30px) scale(1.1); }
+  100% { transform: translate(-30px, 40px) scale(0.95); }
+}
+
+@layer utilities {
+  .font-urdu {
+    font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+    line-height: 1.8;
+    font-size: 1.25rem;
+  }
+}
+
+@media print {
+  nav, form, button, .no-print, .ambient-glow-orb {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+  }
+  main {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .shadow, .shadow-sm, .shadow-xl {
+    box-shadow: none !important;
+  }
+  .border, .border-gray-100 {
+    border: 1px solid #ddd !important;
+  }
+}

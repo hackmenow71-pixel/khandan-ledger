@@ -1,0 +1,506 @@
+{
+  "users": [
+    {
+      "id": "usr-ibrahim",
+      "username": "Ibrahim",
+      "password": "$2b$10$HhGnQzjAsly2INM09KaKJexdp54UjzIUueA6hmaCNzPy8zFN2WsKK",
+      "role": "ADMIN",
+      "createdAt": "2026-10-22T06:00:22.932Z",
+      "updatedAt": "2026-10-22T06:00:22.932Z"
+    },
+    {
+      "id": "usr-admin",
+      "username": "admin",
+      "password": "$2b$10$uWdmWw1Y/tYA0EZXgnAPVuK4OikLtDIGv.Z4KsUQAbaSjQ9Moi8wC",
+      "role": "ADMIN",
+      "createdAt": "2026-10-22T05:57:53.441Z",
+      "updatedAt": "2026-10-22T05:57:53.442Z"
+    },
+    {
+      "id": "usr-fazal",
+      "username": "Fazal",
+      "password": "$2b$10$9/IwOYQucODlgebUv4VbIORcMhC1i4AP/JqdEtin/DfRa0RfTYz3y",
+      "role": "ADMIN",
+      "createdAt": "2026-10-22T05:57:53.442Z",
+      "updatedAt": "2026-10-22T05:57:53.442Z"
+    },
+    {
+      "id": "usr-rehman",
+      "username": "Rehman",
+      "password": "$2b$10$DIXIl/ZvgcyZTiGMInwjQ.odprruCcKPVBSw6wHotiwVp73xIUVUa",
+      "role": "VIEWER",
+      "createdAt": "2026-10-22T05:57:53.442Z",
+      "updatedAt": "2026-10-22T05:57:53.442Z"
+    }
+  ],
+  "systemSettings": [
+    {
+      "id": "singleton",
+      "lastBackupDate": "2026-10-22T10:50:06.979507Z"
+    }
+  ],
+  "persons": [
+    {
+      "id": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "nameEnglish": "Ibrahim (You)",
+      "nameUrdu": "آپ (ابراہیم)",
+      "phone": "0300-1234567",
+      "address": "Lahore",
+      "createdAt": "2026-08-23T10:50:06.979540Z",
+      "updatedAt": "2026-08-23T10:50:06.979545Z"
+    },
+    {
+      "id": "eb1a268f-959c-4bb6-b039-3e795dcd1a40",
+      "nameEnglish": "Ayesha (Sister)",
+      "nameUrdu": "عائشہ (بہن)",
+      "phone": "0321-9876543",
+      "address": "Lahore",
+      "createdAt": "2026-08-23T10:50:06.979555Z",
+      "updatedAt": "2026-08-23T10:50:06.979557Z"
+    },
+    {
+      "id": "649a1774-0eab-43ca-9790-95108959d335",
+      "nameEnglish": "Hamza (Brother)",
+      "nameUrdu": "حمزہ (بھائی)",
+      "phone": "0333-5551234",
+      "address": "Lahore",
+      "createdAt": "2026-08-23T10:50:06.979562Z",
+      "updatedAt": "2026-08-23T10:50:06.979563Z"
+    },
+    {
+      "id": "f1682632-42f0-4a7f-b709-5e3505675bff",
+      "nameEnglish": "Maryam (Sister)",
+      "nameUrdu": "مریم (بہن)",
+      "phone": "0345-7778899",
+      "address": "Lahore",
+      "createdAt": "2026-08-23T10:50:06.979566Z",
+      "updatedAt": "2026-08-23T10:50:06.979567Z"
+    },
+    {
+      "id": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "nameEnglish": "Household Fund (Joint)",
+      "nameUrdu": "مشترکہ گھریلو فنڈ",
+      "phone": "0300-0000000",
+      "address": "Home",
+      "createdAt": "2026-08-23T10:50:06.979571Z",
+      "updatedAt": "2026-08-23T10:50:06.979572Z"
+    },
+    {
+      "id": "6cead78b-9d6a-4dea-9e68-afbe7ea4787d",
+      "nameEnglish": "Zain (Brother)",
+      "nameUrdu": "زین (بھائی)",
+      "phone": "0312-3334444",
+      "address": "Islamabad",
+      "createdAt": "2026-08-23T10:50:06.979576Z",
+      "updatedAt": "2026-08-23T10:50:06.979577Z"
+    },
+    {
+      "id": "86083cdf-ba5e-4cfd-9a91-63b9724159cf",
+      "nameEnglish": "Fatima (Sister)",
+      "nameUrdu": "فاطمہ (بہن)",
+      "phone": "0322-6667788",
+      "address": "Karachi",
+      "createdAt": "2026-08-23T10:50:06.979581Z",
+      "updatedAt": "2026-08-23T10:50:06.979582Z"
+    },
+    {
+      "id": "6fb8aec9-7fd5-43df-b2d9-d3e8fee1a946",
+      "nameEnglish": "Bilal (Cousin)",
+      "nameUrdu": "بلال (کزن)",
+      "phone": "0334-9990000",
+      "address": "Rawalpindi",
+      "createdAt": "2026-08-23T10:50:06.979585Z",
+      "updatedAt": "2026-08-23T10:50:06.979586Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "e81324ae-6e6c-40d7-8d3c-a98745d19b28",
+      "personId": "eb1a268f-959c-4bb6-b039-3e795dcd1a40",
+      "descriptionEnglish": "Emergency Medical Checkup",
+      "descriptionUrdu": "ہنگامی ڈاکٹر چیک اپ اور دوائی",
+      "amount": 5150,
+      "type": "DEBIT",
+      "category": "Health",
+      "date": "2026-10-17T22:50:06.979703Z",
+      "createdAt": "2026-10-17T22:50:06.979703Z",
+      "updatedAt": "2026-10-17T22:50:06.979703Z"
+    },
+    {
+      "id": "484b36ac-657a-427e-ba0c-9d9f6ee5d94c",
+      "personId": "6fb8aec9-7fd5-43df-b2d9-d3e8fee1a946",
+      "descriptionEnglish": "Fresh Milk & Bakery Items",
+      "descriptionUrdu": "روزانہ تازہ دودھ اور بیکری",
+      "amount": 4200,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-10-15T05:50:06.979680Z",
+      "createdAt": "2026-10-15T05:50:06.979680Z",
+      "updatedAt": "2026-10-15T05:50:06.979680Z"
+    },
+    {
+      "id": "7ab5a180-0365-4b88-80bc-40a8b350feec",
+      "personId": "6cead78b-9d6a-4dea-9e68-afbe7ea4787d",
+      "descriptionEnglish": "Shared Netflix & Spotify Plan",
+      "descriptionUrdu": "نیٹ فلکس فیملی سبسکرپشن",
+      "amount": 2300,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-10-15T04:50:06.979615Z",
+      "createdAt": "2026-10-15T04:50:06.979615Z",
+      "updatedAt": "2026-10-15T04:50:06.979615Z"
+    },
+    {
+      "id": "b3511522-b187-4ce5-9bfd-e9a3abeba894",
+      "personId": "eb1a268f-959c-4bb6-b039-3e795dcd1a40",
+      "descriptionEnglish": "Chai & Paratha Breakfast Run",
+      "descriptionUrdu": "چائے اور پراٹھا ناشتہ",
+      "amount": 1300,
+      "type": "DEBIT",
+      "category": "Dining",
+      "date": "2026-10-12T00:50:06.979651Z",
+      "createdAt": "2026-10-12T00:50:06.979651Z",
+      "updatedAt": "2026-10-12T00:50:06.979651Z"
+    },
+    {
+      "id": "52523ea3-cf8b-4c39-bfff-2fa8ceb26ea1",
+      "personId": "6cead78b-9d6a-4dea-9e68-afbe7ea4787d",
+      "descriptionEnglish": "Car Wash & Engine Oil",
+      "descriptionUrdu": "گاڑی کی سروس اور انجن آئل",
+      "amount": 7300,
+      "type": "DEBIT",
+      "category": "Transport",
+      "date": "2026-10-10T04:50:06.979599Z",
+      "createdAt": "2026-10-10T04:50:06.979599Z",
+      "updatedAt": "2026-10-10T04:50:06.979599Z"
+    },
+    {
+      "id": "b01e789e-5f87-4bcc-bb48-d34176036f09",
+      "personId": "86083cdf-ba5e-4cfd-9a91-63b9724159cf",
+      "descriptionEnglish": "Sunday Family BBQ Dinner",
+      "descriptionUrdu": "اتوار فیملی بار بی کیو ڈنر",
+      "amount": 10750,
+      "type": "DEBIT",
+      "category": "Dining",
+      "date": "2026-10-09T05:50:06.979662Z",
+      "createdAt": "2026-10-09T05:50:06.979662Z",
+      "updatedAt": "2026-10-09T05:50:06.979662Z"
+    },
+    {
+      "id": "b1829a9b-02f3-4e01-bc8e-0904c61ff4be",
+      "personId": "6fb8aec9-7fd5-43df-b2d9-d3e8fee1a946",
+      "descriptionEnglish": "Monthly Salary Contribution",
+      "descriptionUrdu": "ماہانہ تنخواہ اور حصہ",
+      "amount": 87500,
+      "type": "CREDIT",
+      "category": "Salary",
+      "date": "2026-10-08T02:50:06.979671Z",
+      "createdAt": "2026-10-08T02:50:06.979671Z",
+      "updatedAt": "2026-10-08T02:50:06.979671Z"
+    },
+    {
+      "id": "c8a81ec9-8e3d-4e50-aad9-bbcfe5e8ba17",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "descriptionEnglish": "Bakery Breakfast & Eggs",
+      "descriptionUrdu": "صبح کا ناشتہ اور انڈے",
+      "amount": 2100,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-09-30T05:50:06.979698Z",
+      "createdAt": "2026-09-30T05:50:06.979698Z",
+      "updatedAt": "2026-09-30T05:50:06.979698Z"
+    },
+    {
+      "id": "73bb624e-824e-4b4a-9dda-5b68c286c640",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "descriptionEnglish": "StormFiber WiFi & Internet",
+      "descriptionUrdu": "سٹارم فائبر انٹرنیٹ بل",
+      "amount": 5300,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-09-26T08:50:06.979647Z",
+      "createdAt": "2026-09-26T08:50:06.979647Z",
+      "updatedAt": "2026-09-26T08:50:06.979647Z"
+    },
+    {
+      "id": "3e256cce-5e84-4a79-aa56-7b29865f05dc",
+      "personId": "eb1a268f-959c-4bb6-b039-3e795dcd1a40",
+      "descriptionEnglish": "Home AC Servicing & Repair",
+      "descriptionUrdu": "گھر کے اے سی کی سروس اور مرمت",
+      "amount": 6850,
+      "type": "DEBIT",
+      "category": "Maintenance",
+      "date": "2026-09-23T02:50:06.979633Z",
+      "createdAt": "2026-09-23T02:50:06.979633Z",
+      "updatedAt": "2026-09-23T02:50:06.979633Z"
+    },
+    {
+      "id": "7453465d-e814-437d-813a-f19d42f0ab36",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "descriptionEnglish": "Car Petrol & Bike Fuel",
+      "descriptionUrdu": "گاڑی اور موٹر سائیکل کا پٹرول",
+      "amount": 14950,
+      "type": "DEBIT",
+      "category": "Transport",
+      "date": "2026-09-19T03:50:06.979637Z",
+      "createdAt": "2026-09-19T03:50:06.979637Z",
+      "updatedAt": "2026-09-19T03:50:06.979637Z"
+    },
+    {
+      "id": "1966288d-4d08-4b76-aca4-ed884b6c24f6",
+      "personId": "6cead78b-9d6a-4dea-9e68-afbe7ea4787d",
+      "descriptionEnglish": "Kitchen Spices, Oil & Meat",
+      "descriptionUrdu": "باورچی خانہ مصالحہ جات اور گوشت",
+      "amount": 17050,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-09-18T02:50:06.979708Z",
+      "createdAt": "2026-09-18T02:50:06.979708Z",
+      "updatedAt": "2026-09-18T02:50:06.979708Z"
+    },
+    {
+      "id": "97d9f87f-9a18-48d3-b9ac-686b12b801a6",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "descriptionEnglish": "Kitchen Spices, Oil & Meat",
+      "descriptionUrdu": "باورچی خانہ مصالحہ جات اور گوشت",
+      "amount": 16100,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-09-16T08:50:06.979689Z",
+      "createdAt": "2026-09-16T08:50:06.979689Z",
+      "updatedAt": "2026-09-16T08:50:06.979689Z"
+    },
+    {
+      "id": "e1fccecb-4d10-4b66-ab2f-03ed46a323fb",
+      "personId": "86083cdf-ba5e-4cfd-9a91-63b9724159cf",
+      "descriptionEnglish": "Stationery & School Supplies",
+      "descriptionUrdu": "سکول اور کالج کا سامان",
+      "amount": 3400,
+      "type": "DEBIT",
+      "category": "Education",
+      "date": "2026-09-16T01:50:06.979656Z",
+      "createdAt": "2026-09-16T01:50:06.979656Z",
+      "updatedAt": "2026-09-16T01:50:06.979656Z"
+    },
+    {
+      "id": "f09cfd61-1a14-436e-90fd-e479d0ac705a",
+      "personId": "649a1774-0eab-43ca-9790-95108959d335",
+      "descriptionEnglish": "Monthly Salary Contribution",
+      "descriptionUrdu": "ماہانہ تنخواہ اور حصہ",
+      "amount": 96100,
+      "type": "CREDIT",
+      "category": "Salary",
+      "date": "2026-09-13T02:50:06.979713Z",
+      "createdAt": "2026-09-13T02:50:06.979713Z",
+      "updatedAt": "2026-09-13T02:50:06.979713Z"
+    },
+    {
+      "id": "3bd61c34-4e2c-4b38-9a20-e079ebff804c",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "descriptionEnglish": "Pharmacy Meds & Doctor Tests",
+      "descriptionUrdu": "فارمیسی ادویات اور لیب ٹیسٹ",
+      "amount": 5750,
+      "type": "DEBIT",
+      "category": "Health",
+      "date": "2026-09-12T02:50:06.979627Z",
+      "createdAt": "2026-09-12T02:50:06.979627Z",
+      "updatedAt": "2026-09-12T02:50:06.979627Z"
+    },
+    {
+      "id": "7783de12-6fd9-4f90-a796-6eaee8edb166",
+      "personId": "6cead78b-9d6a-4dea-9e68-afbe7ea4787d",
+      "descriptionEnglish": "Sui Northern Gas Bill",
+      "descriptionUrdu": "سوئی گیس کا بل",
+      "amount": 5150,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-09-11T09:50:06.979717Z",
+      "createdAt": "2026-09-11T09:50:06.979717Z",
+      "updatedAt": "2026-09-11T09:50:06.979717Z"
+    },
+    {
+      "id": "ec673d76-2ce3-46f5-ae6b-08c981a0dab5",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "descriptionEnglish": "StormFiber WiFi & Internet",
+      "descriptionUrdu": "سٹارم فائبر انٹرنیٹ بل",
+      "amount": 4300,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-09-11T08:50:06.979694Z",
+      "createdAt": "2026-09-11T08:50:06.979694Z",
+      "updatedAt": "2026-09-11T08:50:06.979694Z"
+    },
+    {
+      "id": "e5d5a6d8-bc63-47ef-ac7b-f6503d5b6a6b",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9",
+      "descriptionEnglish": "Car Wash & Engine Oil",
+      "descriptionUrdu": "گاڑی کی سروس اور انجن آئل",
+      "amount": 7300,
+      "type": "DEBIT",
+      "category": "Transport",
+      "date": "2026-09-10T09:50:06.979726Z",
+      "createdAt": "2026-09-10T09:50:06.979726Z",
+      "updatedAt": "2026-09-10T09:50:06.979726Z"
+    },
+    {
+      "id": "d5a282f8-abd9-428e-aebb-0d62658efd31",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "descriptionEnglish": "Emergency Medical Checkup",
+      "descriptionUrdu": "ہنگامی ڈاکٹر چیک اپ اور دوائی",
+      "amount": 4700,
+      "type": "DEBIT",
+      "category": "Health",
+      "date": "2026-09-09T22:50:06.979722Z",
+      "createdAt": "2026-09-09T22:50:06.979722Z",
+      "updatedAt": "2026-09-09T22:50:06.979722Z"
+    },
+    {
+      "id": "1df858f6-8ec2-407c-b135-8f5cc9226f4f",
+      "personId": "f1682632-42f0-4a7f-b709-5e3505675bff",
+      "descriptionEnglish": "Bakery Breakfast & Eggs",
+      "descriptionUrdu": "صبح کا ناشتہ اور انڈے",
+      "amount": 2300,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-09-09T22:50:06.979622Z",
+      "createdAt": "2026-09-09T22:50:06.979622Z",
+      "updatedAt": "2026-09-09T22:50:06.979622Z"
+    },
+    {
+      "id": "46174cd2-254e-4ca8-814c-66c1f63bc7b5",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "descriptionEnglish": "Kitchen Spices, Oil & Meat",
+      "descriptionUrdu": "باورچی خانہ مصالحہ جات اور گوشت",
+      "amount": 16900,
+      "type": "DEBIT",
+      "category": "Groceries",
+      "date": "2026-09-09T01:50:06.979675Z",
+      "createdAt": "2026-09-09T01:50:06.979675Z",
+      "updatedAt": "2026-09-09T01:50:06.979675Z"
+    },
+    {
+      "id": "ad42c264-a79f-4ffa-a3dc-b3cb6eb96c92",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e",
+      "descriptionEnglish": "Sui Northern Gas Bill",
+      "descriptionUrdu": "سوئی گیس کا بل",
+      "amount": 6500,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-09-08T01:50:06.979666Z",
+      "createdAt": "2026-09-08T01:50:06.979666Z",
+      "updatedAt": "2026-09-08T01:50:06.979666Z"
+    },
+    {
+      "id": "f1555e9d-fda5-43dd-8fa4-bb41cae8d268",
+      "personId": "f1682632-42f0-4a7f-b709-5e3505675bff",
+      "descriptionEnglish": "StormFiber WiFi & Internet",
+      "descriptionUrdu": "سٹارم فائبر انٹرنیٹ بل",
+      "amount": 4400,
+      "type": "DEBIT",
+      "category": "Bills",
+      "date": "2026-09-07T02:50:06.979684Z",
+      "createdAt": "2026-09-07T02:50:06.979684Z",
+      "updatedAt": "2026-09-07T02:50:06.979684Z"
+    },
+    {
+      "id": "a52e0e5a-8507-42de-b609-3354539eee50",
+      "personId": "eb1a268f-959c-4bb6-b039-3e795dcd1a40",
+      "descriptionEnglish": "Stationery & School Supplies",
+      "descriptionUrdu": "سکول اور کالج کا سامان",
+      "amount": 3500,
+      "type": "DEBIT",
+      "category": "Education",
+      "date": "2026-09-07T00:50:06.979642Z",
+      "createdAt": "2026-09-07T00:50:06.979642Z",
+      "updatedAt": "2026-09-07T00:50:06.979642Z"
+    }
+  ],
+  "files": [],
+  "notes": [
+    {
+      "id": "d01fed1b-f08f-4c6a-ba8b-565f6a2fd323",
+      "text": "Pay LESCO electricity bill before the 10th to avoid late fee surcharge (بجلی کا بل 10 تاریخ سے پہلے ادا کرنا ہے)",
+      "isCompleted": false,
+      "createdAt": "2026-10-22T10:50:06.979751Z",
+      "personId": "c649b4e2-4fc3-48ef-9c14-e12765c98ac9"
+    },
+    {
+      "id": "5f46e0d9-d962-4546-b8ad-65be6b2d4ccd",
+      "text": "Water tanker delivery scheduled for Friday morning at 9:00 AM (پانی کا ٹینکر جمعہ کی صبح)",
+      "isCompleted": true,
+      "createdAt": "2026-10-20T10:50:06.979754Z",
+      "personId": "02f66ab5-3688-4ebd-9114-4f1957e2c23e"
+    },
+    {
+      "id": "c710c8fd-82d8-4bab-9b48-7e4c77a4071a",
+      "text": "Ayesha paid Rs. 14,000 for weekly grocery rashan from Metro Cash & Carry",
+      "isCompleted": true,
+      "createdAt": "2026-10-17T10:50:06.979757Z",
+      "personId": "eb1a268f-959c-4bb6-b039-3e795dcd1a40"
+    },
+    {
+      "id": "6a3f9cc3-70cf-4a51-bb87-622ea41841ee",
+      "text": "Hamza semester registration fee due next Monday (کالج سمسٹر فیس)",
+      "isCompleted": false,
+      "createdAt": "2026-10-21T10:50:06.979759Z",
+      "personId": "649a1774-0eab-43ca-9790-95108959d335"
+    }
+  ],
+  "recurringExpenses": [
+    {
+      "id": "57998dc0-32d3-41d0-86ea-318019d86e77",
+      "nameEnglish": "LESCO Electricity Bill",
+      "nameUrdu": "لیسکو بجلی کا بل",
+      "expectedAmount": 58500,
+      "dueDay": 10,
+      "category": "Bills",
+      "createdAt": "2026-08-23T10:50:06.979737Z"
+    },
+    {
+      "id": "02d5d990-dd18-4464-9a43-a456d8ad3276",
+      "nameEnglish": "StormFiber High-Speed WiFi",
+      "nameUrdu": "سٹارم فائبر انٹرنیٹ",
+      "expectedAmount": 4800,
+      "dueDay": 5,
+      "category": "Bills",
+      "createdAt": "2026-08-23T10:50:06.979741Z"
+    },
+    {
+      "id": "60cb622a-b13e-4dec-b786-1e786acf691d",
+      "nameEnglish": "Sui Northern Gas Bill",
+      "nameUrdu": "سوئی ناردرن گیس کا بل",
+      "expectedAmount": 6200,
+      "dueDay": 15,
+      "category": "Bills",
+      "createdAt": "2026-08-23T10:50:06.979743Z"
+    },
+    {
+      "id": "060141f2-f101-4eb5-937e-a51af3183cab",
+      "nameEnglish": "Drinking Water Tanker & Bottles",
+      "nameUrdu": "پینے کا صاف پانی اور ٹینکر",
+      "expectedAmount": 3500,
+      "dueDay": 25,
+      "category": "Home",
+      "createdAt": "2026-08-23T10:50:06.979746Z"
+    },
+    {
+      "id": "0dfcf5a1-615f-45cb-8be0-e8b93525a287",
+      "nameEnglish": "Shared Netflix Family Plan",
+      "nameUrdu": "نیٹ فلکس فیملی سبسکرپشن",
+      "expectedAmount": 2200,
+      "dueDay": 20,
+      "category": "Bills",
+      "createdAt": "2026-08-23T10:50:06.979748Z"
+    }
+  ],
+  "expensePayments": [],
+  "auditLogs": [
+    {
+      "id": "b5e267ed-7c09-4635-befd-a55a4e3b58a5",
+      "username": "Admin",
+      "action": "INIT_DEMO_DATA",
+      "details": "Initialized clean randomized family expense dataset (PKR)",
+      "createdAt": "2026-10-22T10:50:06.979762Z"
+    }
+  ]
+}

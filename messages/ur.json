@@ -1,0 +1,87 @@
+{
+  "Navigation": {
+    "dashboard": "ڈیش بورڈ",
+    "persons": "کھاتے",
+    "reports": "رپورٹس",
+    "inventory": "انوینٹری",
+    "notes": "نوٹس",
+    "backup": "ڈیٹا بیک اپ کریں",
+    "logout": "لاگ آؤٹ",
+    "switchLang": "English",
+    "expenses": "اخراجات"
+  },
+  "Dashboard": {
+    "title": "ڈیش بورڈ",
+    "totalCredit": "کل جمع",
+    "totalDebit": "کل خرچ",
+    "totalProfitPaid": "ادا کردہ منافع",
+    "totalToBeGiven": "دینے والی رقم",
+    "totalToBeTaken": "لینے والی رقم",
+    "netBalance": "خالص بیلنس",
+    "totalAccounts": "کل کھاتے",
+    "recentTransactions": "حالیہ لین دین",
+    "topCreditors": "سب سے زیادہ بیلنس",
+    "topDebtors": "سب سے زیادہ قرض",
+    "account": "کھاتہ",
+    "exportAll": "سب ایکسپورٹ کریں"
+  },
+  "Persons": {
+    "title": "کھاتے",
+    "addPerson": "نیا کھاتہ بنائیں",
+    "nameEn": "نام (انگریزی)",
+    "nameUr": "نام (اردو)",
+    "edit": "ترمیم",
+    "save": "محفوظ کریں",
+    "cancel": "منسوخ کریں"
+  },
+  "Transactions": {
+    "title": "لین دین",
+    "addTransaction": "لین دین شامل کریں",
+    "type": "قسم",
+    "amount": "رقم",
+    "description": "تفصیل",
+    "descEn": "تفصیل (انگریزی)",
+    "descUr": "تفصیل (اردو)",
+    "date": "تاریخ",
+    "actions": "اعمال",
+    "edit": "ترمیم",
+    "delete": "حذف کریں",
+    "copy": "کاپی کریں",
+    "copyToOther": "دوسرے کھاتوں میں کاپی کریں",
+    "save": "محفوظ کریں",
+    "cancel": "منسوخ کریں"
+  },
+  "Inventory": {
+    "title": "انوینٹری",
+    "uploadFile": "فائل اپلوڈ کریں",
+    "fileName": "فائل کا نام",
+    "date": "تاریخ",
+    "linkedAccount": "منسلک کھاتہ",
+    "noFiles": "کوئی فائل نہیں ملی۔",
+    "delete": "حذف کریں",
+    "view": "دیکھیں",
+    "dragDrop": "فائلیں یہاں ڈریگ کریں، یا منتخب کرنے کے لیے کلک کریں"
+  },
+  "Notes": {
+    "title": "نوٹس اور یاددہانی",
+    "addNote": "نوٹ شامل کریں",
+    "noteText": "نوٹ کی تفصیل",
+    "linkedAccount": "منسلک کھاتہ",
+    "noNotes": "کوئی نوٹ نہیں ملا۔",
+    "delete": "حذف کریں"
+  },
+  "Expenses": {
+    "title": "ماہانہ اخراجات",
+    "addExpense": "خرچہ شامل کریں",
+    "nameEn": "خرچے کا نام (انگریزی)",
+    "nameUr": "خرچے کا نام (اردو)",
+    "expectedAmount": "متوقع رقم",
+    "dueDate": "مقررہ تاریخ",
+    "paidAmount": "ادا شدہ رقم",
+    "markPaid": "ادا کریں",
+    "unpaid": "غیر ادا شدہ",
+    "paid": "ادا شدہ",
+    "delete": "حذف کریں",
+    "noExpenses": "کوئی ماہانہ خرچہ نہیں ملا۔"
+  }
+}
